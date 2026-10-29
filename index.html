@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catálogo | Laberna Dulce</title>
+    <meta name="description" content="Catálogo de doces finos da Laberna Dulce, ateliê de confeitaria em São Paulo." />
+    <meta name="theme-color" content="#fdf9ec" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#catalogo">Pular para o catálogo</a>
+
+    <header class="nav" data-nav>
+      <a class="nav__brand" href="#topo" aria-label="Laberna Dulce, início">
+        <img src="assets/logo-mark.png" alt="Laberna Dulce" />
+      </a>
+      <nav class="nav__links" aria-label="Seções">
+        <a href="#manifesto">Ateliê</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#encomendar">Como encomendar</a>
+      </nav>
+      <a class="btn btn--small" href="#catalogo">Ver doces</a>
+    </header>
+
+    <main id="topo">
+      <!-- Cena de scroll: o bem-casado é desembrulhado e se parte ao meio -->
+      <section class="split" data-split aria-label="Abertura">
+        <div class="split__stage">
+          <div class="split__copy split__copy--intro" data-split-intro>
+            <p class="eyebrow">ateliê de confeitaria · São Paulo</p>
+            <h1 class="display">Doces finos,<br /><em>feitos à mão.</em></h1>
+          </div>
+
+          <div class="split__copy split__copy--mid" data-split-mid aria-hidden="true">
+            <p class="display display--sm">Todo doce bom<br /><em>começa com um gesto.</em></p>
+          </div>
+
+          <svg class="split__art" data-split-art viewBox="0 150 800 380" role="img" aria-label="Um bem-casado sendo desembrulhado e partido ao meio">
+            <defs>
+              <radialGradient id="glazeTop" cx="42%" cy="35%" r="70%">
+                <stop offset="0" stop-color="#ffffff" />
+                <stop offset=".55" stop-color="#fbf6ea" />
+                <stop offset="1" stop-color="#ece2cc" />
+              </radialGradient>
+              <linearGradient id="glazeSide" x1="0" x2="1">
+                <stop offset="0" stop-color="#e6dac2" />
+                <stop offset=".35" stop-color="#fbf7ee" />
+                <stop offset=".7" stop-color="#f4ecdc" />
+                <stop offset="1" stop-color="#d9cbb0" />
+              </linearGradient>
+              <linearGradient id="sponge" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#f3d79a" />
+                <stop offset="1" stop-color="#e2b66b" />
+              </linearGradient>
+              <linearGradient id="caramel" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#c58a4b" />
+                <stop offset=".5" stop-color="#a86a32" />
+                <stop offset="1" stop-color="#8a5426" />
+              </linearGradient>
+              <pattern id="pores" width="14" height="12" patternUnits="userSpaceOnUse">
+                <rect width="14" height="12" fill="url(#sponge)" />
+                <ellipse cx="3" cy="3" rx="1.6" ry="1.1" fill="#c9974f" opacity=".55" />
+                <ellipse cx="10" cy="8" rx="1.2" ry=".9" fill="#c9974f" opacity=".5" />
+                <ellipse cx="7" cy="1" rx=".8" ry=".6" fill="#b88644" opacity=".45" />
+              </pattern>
+              <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#f6efe0" />
+                <stop offset="1" stop-color="#e8dfd0" />
+              </linearGradient>
+              <pattern id="crepe" width="6" height="40" patternUnits="userSpaceOnUse">
+                <rect width="6" height="40" fill="url(#paper)" />
+                <rect width="1" height="40" fill="#d8ccb6" opacity=".55" />
+              </pattern>
+              <filter id="soft" x="-20%" y="-20%" width="140%" height="160%">
+                <feGaussianBlur stdDeviation="14" />
+              </filter>
+
+              <!-- O bem-casado inteiro (antes de partir) -->
+              <g id="cookie">
+                <path d="M240 300 L240 380 A160 60 0 0 0 560 380 L560 300 Z" fill="url(#glazeSide)" />
+                <path d="M240 343 A160 60 0 0 0 560 343" fill="none" stroke="#d9c9a8" stroke-width="2" opacity=".7" />
+                <ellipse cx="400" cy="300" rx="160" ry="60" fill="url(#glazeTop)" />
+                <path d="M300 268 Q360 248 440 252" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".8" />
+                <ellipse cx="452" cy="318" rx="18" ry="5" fill="#fff" opacity=".55" />
+              </g>
+            </defs>
+
+            <ellipse class="split__shadow" data-shadow cx="400" cy="460" rx="190" ry="26" fill="#a07b54" opacity=".22" filter="url(#soft)" />
+
+            <!-- papel crepom: as pétalas abrem para fora no começo do scroll -->
+            <g data-paper-back>
+              <path d="M220 400 C 200 300, 250 210, 330 190 C 360 250, 380 300, 400 400 Z" fill="url(#crepe)" />
+              <path d="M580 400 C 600 300, 550 210, 470 190 C 440 250, 420 300, 400 400 Z" fill="url(#crepe)" />
+            </g>
+
+            <!-- inteiro até rachar; depois o JS desenha as duas metades girando para mostrar o miolo -->
+            <use href="#cookie" data-whole />
+            <g data-half="left" />
+            <g data-half="right" />
+
+            <g data-strands fill="none" stroke="#a8692f" stroke-linecap="round"></g>
+            <path data-crack fill="none" stroke="#8a6743" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+
+            <g data-paper-front>
+              <path data-petal="l" d="M226 404 C 206 330, 236 270, 300 250 C 340 300, 360 350, 380 410 Z" fill="url(#crepe)" />
+              <path data-petal="r" d="M574 404 C 594 330, 564 270, 500 250 C 460 300, 440 350, 420 410 Z" fill="url(#crepe)" />
+              <path data-petal="c" d="M300 420 C 290 340, 340 280, 400 270 C 460 280, 510 340, 500 420 Q 400 452 300 420 Z" fill="url(#crepe)" />
+            </g>
+
+            <g data-bow>
+              <path d="M400 268 C 360 228, 320 236, 330 262 C 338 282, 380 276, 400 268 Z" fill="#a07b54" />
+              <path d="M400 268 C 440 228, 480 236, 470 262 C 462 282, 420 276, 400 268 Z" fill="#a07b54" />
+              <path d="M396 270 L 372 318 L 384 314 L 390 326 L 402 272 Z" fill="#8a6743" />
+              <path d="M404 270 L 428 318 L 416 314 L 410 326 L 398 272 Z" fill="#8a6743" />
+              <circle cx="400" cy="268" r="9" fill="#8a6743" />
+            </g>
+
+            <g data-crumbs></g>
+          </svg>
+
+          <div class="split__copy split__copy--outro" data-split-outro>
+            <p class="eyebrow">nosso clássico</p>
+            <h2 class="display">Feito para<br /><em>ser dividido.</em></h2>
+            <a class="btn" href="#catalogo">Explorar o catálogo</a>
+          </div>
+
+          <div class="split__hint" data-split-hint aria-hidden="true">
+            <span>role para abrir</span>
+            <i></i>
+          </div>
+          <div class="split__progress" aria-hidden="true"><i data-split-bar></i></div>
+        </div>
+      </section>
+
+      <section class="manifesto" id="manifesto">
+        <p class="eyebrow">o ateliê</p>
+        <p class="manifesto__text" data-words>
+          Cada receita nasce devagar, com ingredientes escolhidos um a um, massa batida à mão e um
+          acabamento que só termina quando parece presente. Doce fino não tem pressa.
+        </p>
+        <img class="manifesto__badge" src="assets/logo-mark-badge.png" alt="" aria-hidden="true" />
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track" data-marquee></div>
+      </div>
+
+      <section class="catalog" id="catalogo" aria-labelledby="catalog-title">
+        <div class="catalog__head">
+          <div>
+            <p class="eyebrow">catálogo</p>
+            <h2 class="section-title" id="catalog-title">Escolha o seu <em>doce.</em></h2>
+          </div>
+          <label class="search">
+            <span class="visually-hidden">Buscar doce</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+            <input type="search" placeholder="Buscar doce" data-search autocomplete="off" />
+          </label>
+        </div>
+
+        <div class="chips" role="tablist" aria-label="Categorias" data-chips></div>
+        <p class="catalog__count" data-count aria-live="polite"></p>
+        <ul class="grid" data-grid></ul>
+        <p class="catalog__empty" data-empty hidden>Nenhum doce encontrado por aqui.</p>
+      </section>
+
+      <section class="steps" id="encomendar" aria-labelledby="steps-title">
+        <div class="steps__intro">
+          <p class="eyebrow">como encomendar</p>
+          <h2 class="section-title" id="steps-title">Do pedido<br /><em>à primeira mordida.</em></h2>
+        </div>
+        <ol class="steps__list" data-steps>
+          <li class="step">
+            <span class="step__num">01</span>
+            <h3>Escolha no catálogo</h3>
+            <p>Navegue pelas linhas, abra cada doce e veja tamanhos e detalhes.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">02</span>
+            <h3>Fale com o ateliê</h3>
+            <p>Envie o pedido pelo WhatsApp com a data e a quantidade que você precisa.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">03</span>
+            <h3>Retire ou receba</h3>
+            <p>Combinamos retirada no ateliê ou entrega em São Paulo, no horário marcado.</p>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img class="footer__logo" src="assets/logo-mark.png" alt="Laberna Dulce" />
+      <p class="footer__tag">doces finos · São Paulo</p>
+      <nav class="footer__links" aria-label="Contato" data-contact></nav>
+      <p class="footer__copy">© <span data-year></span> Laberna Dulce</p>
+    </footer>
+
+    <dialog class="modal" data-modal aria-labelledby="modal-title">
+      <div class="modal__inner">
+        <button class="modal__close" type="button" data-modal-close aria-label="Fechar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>
+        </button>
+        <div class="modal__media" data-modal-media></div>
+        <div class="modal__body">
+          <p class="eyebrow" data-modal-category></p>
+          <h3 class="modal__title" id="modal-title" data-modal-title></h3>
+          <p class="modal__desc" data-modal-desc></p>
+          <div class="sizes" data-modal-sizes role="radiogroup" aria-label="Tamanho"></div>
+          <p class="modal__price" data-modal-price></p>
+          <a class="btn btn--block" data-modal-cta target="_blank" rel="noopener">Encomendar</a>
+        </div>
+      </div>
+    </dialog>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
